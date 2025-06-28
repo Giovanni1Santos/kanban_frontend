@@ -1,0 +1,87 @@
+{
+  "buildManifest": {
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/auth/layout": {
+        "id": "routes/auth/layout",
+        "parentId": "root",
+        "file": "routes/auth/layout.tsx"
+      },
+      "routes/auth/login": {
+        "id": "routes/auth/login",
+        "parentId": "routes/auth/layout",
+        "file": "routes/auth/login.tsx",
+        "path": "login"
+      },
+      "routes/auth/register": {
+        "id": "routes/auth/register",
+        "parentId": "routes/auth/layout",
+        "file": "routes/auth/register.tsx",
+        "path": "register"
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/workspaces/kanban_frontend/app",
+    "basename": "/",
+    "buildDirectory": "/workspaces/kanban_frontend/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "root",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/auth/layout": {
+        "id": "routes/auth/layout",
+        "parentId": "root",
+        "file": "routes/auth/layout.tsx"
+      },
+      "routes/auth/login": {
+        "id": "routes/auth/login",
+        "parentId": "routes/auth/layout",
+        "file": "routes/auth/login.tsx",
+        "path": "login"
+      },
+      "routes/auth/register": {
+        "id": "routes/auth/register",
+        "parentId": "routes/auth/layout",
+        "file": "routes/auth/register.tsx",
+        "path": "register"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "initial"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": false
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
